@@ -1,0 +1,127 @@
+/* BASED ON BOOTSTRAP ALBUM EXAMPLE */
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.text-muted {
+  color: rgb(191, 191, 191) !important;
+}
+
+a {
+  color: rgb(0, 168, 186);
+}
+
+a:hover {
+  color: rgb(0, 186, 86);
+}
+
+a:visited {
+  color: rgb(206, 166, 5);
+}
+
+a.link-white {
+  color: white;
+}
+
+.btn, .btn:visited {
+  color: white;
+}
+
+.btn-primary {
+  background: rgb(0, 168, 186);
+  border-color: rgb(0, 135, 150);
+}
+
+.btn-primary:hover {
+  background: rgb(0, 80, 88);
+  border-color: rgb(0, 135, 150);
+}
+
+.btn-secondary {
+  background: rgb(205, 205, 205);
+}
+
+.navbar {
+  margin-bottom: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  background: linear-gradient(135deg, rgb(0, 14, 23) 0%, rgb(0, 43, 74) 100%);
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background: rgba(0,168,186,1);
+  background: -moz-linear-gradient(-45deg, rgba(0,168,186,1) 0%, rgba(0,44,48,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,168,186,1)), color-stop(100%, rgba(0,44,48,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(0,168,186,1) 0%, rgba(0,44,48,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(0,168,186,1) 0%, rgba(0,44,48,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(0,168,186,1) 0%, rgba(0,44,48,1) 100%);
+  background: linear-gradient(135deg, rgba(0,168,186,1) 0%, rgba(0,44,48,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8ba', endColorstr='#002c30', GradientType=1 );
+}
+
+.card {
+  float: left;
+  width: calc(50% - 40px);
+  padding: .75rem;
+  margin: 20px;
+  border: 0;
+  border-radius: 0;
+  background: rgb(0, 24, 39);
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  background: rgb(1, 21, 23);
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+#navbarHeader {
+  background-image: url('/assets/img/background.svg');
+  background-size: 650px 200px;
+  background-repeat: repeat-x;
+}
+
+.navbar {
+  background: rgb(0, 168, 186) !important;
+}
+
+.navbar-inverse .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
