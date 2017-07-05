@@ -11,7 +11,7 @@
 
 (function ( window, document, undefined ) {
 
-  data2Vis('/data/slovakia_cities.tsv');
+  data2Vis('slovakia_cities.tsv');
 
   /**
    * Function firstly parses the given file and then visualizes it.
