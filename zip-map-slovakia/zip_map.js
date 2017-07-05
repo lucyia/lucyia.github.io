@@ -215,7 +215,7 @@
         .attr('cx', function(d) { return projection( [d.lon, d.lat] )[0]; })
         .attr('cy', function(d) { return projection( [d.lon, d.lat] )[1]; })
         .on('mouseover', mouseover)
-        .on('mouseout', moseout)
+        .on('mouseout', mouseout)
         .transition()
         // .delay(function (d, i) { return Math.max(i, 50) + i; })
         .attr('r', circleSize)
@@ -276,7 +276,7 @@
     /**
      * Hides the tooltip and resets the stroke of a circle.
      */
-    function moseout() {
+    function mouseout() {
       d3.select( this )
         .attr('stroke', 'none');
 
