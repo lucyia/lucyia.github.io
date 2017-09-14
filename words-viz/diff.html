@@ -53,8 +53,8 @@
       <div class="inner">
         <h1 class="masthead-brand">VizEx / Visual Text Explorations</h1>
         <nav class="nav nav-masthead">
-          <a class="nav-link active" href="./index.html">Similarities</a>
-          <a class="nav-link" href="./diff.html">Differences</a>
+          <a class="nav-link" href="./index.html">Similarities</a>
+          <a class="nav-link active" href="./diff.html">Differences</a>
         </nav>
       </div>
     </div>
@@ -64,9 +64,18 @@
       <div class="row align-items-center">
 
           <div class="col-md-12 col-lg-8 col-viz">
-            <div id="viz-wrapper"></div>
-            <div id="word-input-wrapper" class="word-input-wrapper form-group row">
-              <input class="form-control word-input" type="text" id="word-input">
+            <div id="viz-wrapper-diff"></div>
+            <div id="options-wrapper">
+              <a class="option active" data-value="0" title="for example: small book" href="javascript:void(0)">modifiers of ...</a>
+              <a class="option" data-value="1" title="for example: book has" href="javascript:void(0)">verbs with ... as subject</a>
+              <a class="option" data-value="2" title="for example: read a book " href="javascript:void(0)">verbs with ... as object</a>
+              <a class="option" data-value="3" title="for example: book and / or magazine" href="javascript:void(0)">words and / or ...</a>
+            </div>
+            <div id="word-input-left-wrapper" class="word-input-wrapper form-group-input form-group row">
+              <input class="form-control word-input" type="text" id="word-input-left">
+            </div>
+            <div id="word-input-right-wrapper" class="word-input-wrapper form-group-input form-group row">
+              <input class="form-control word-input" type="text" id="word-input-right">
             </div>
             <button id="button-close" type="button" class="close button-word button-word-close" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -85,31 +94,34 @@
           <div class="col-md-12 col-lg-4 col-info">
             <div class="inner info info-about">
               <div class="heading">
-                <h2 class="info-intro-animate">What is similar to ...?</h2>
+                <h2 class="info-intro-animate">What are differences<br />between ...?</h2>
               </div>
 
               <div class="about">
                 <h3 class="info-intro-animate">About</h3>
                 <p class="info-intro-animate">
-                  This is an interactive visualization of a thesaurus – the view highlights the relationship
-                  between the central search word and it’s reference to other words used in context within the dataset.
+                  This is an interactive visualization of different usage of two words in a dataset - especially
+                  useful for close synonyms and also antonyms, for example research vs experiment.
                 </p>
               </div>
 
               <div class="visual">
                 <h3 class="info-intro-animate">Interactivity</h3>
                 <p class="info-intro-animate">
-                  A query word is in the middle of the visualisation, around which are words that have either a
-                  relationship or are used in context with the query word.
-                  The closer the word is to the center, the closer the relationship/context it has to the query word.
+                  Two query words appear on each side of the visualisation, between which are words that have either a
+                  relationship or are used in context with the query words.
+                  The closer the word is to the center, the more it tends to be combined with both of the given words.
+                  So the more closer the word is to the right / left, the more it tends to be combined with right /
+                  left word.
+
                   The size of the circle and the text has a direct correlation to the
                   frequently the word can be found in the dataset. You can see a detailed explanation by
                   hovering over the words or by clicking on the circles surrounding the words.
                 </p>
                 <p class="info-intro-animate">
                   To change the query, i.e. a word, you can either click on a surrounding word or enter a new query
-                  word into search field. Simply click on the word and a type field will appear, enabling you
-                  to enter a new query word.
+                  word into search field. Simply click on a word on left or on right and a type field will appear,
+                  enabling you to enter new query words.
                 </p>
               </div>
 
@@ -135,7 +147,7 @@
 
             <div class="inner info info-legend">
               <h3 class="info-intro-animate">Key</h3>
-              <img src="legend.svg" alt="legend" class="info-intro-animate" />
+              <img src="legend_diff.svg" alt="legend" class="info-intro-animate" />
             </div>
 
         </div>
