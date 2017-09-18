@@ -1,11 +1,11 @@
 /* BASED ON BOOTSTRAP ALBUM EXAMPLE */
 body {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Marvel', Helvetica, Arial, sans-serif;
   color: white;
 }
 
 .text-muted {
-  color: rgb(191, 191, 191) !important;
+  color: rgb(192, 249, 255) !important;
 }
 
 a {
@@ -39,7 +39,11 @@ a.link-white {
 }
 
 .btn-secondary {
-  background: rgb(205, 205, 205);
+  background: rgb(120, 120, 120);
+}
+
+.btn-secondary:hover {
+  background: rgb(70, 70, 70);
 }
 
 .navbar {
@@ -90,15 +94,30 @@ a.link-white {
   margin: 20px;
   border: 0;
   border-radius: 0;
-  background: rgb(0, 24, 39);
+  background: rgba(255, 255, 255, 0.45);
 }
 
-.card > img {
+.card img {
   margin-bottom: .75rem;
+  width: 100%;
 }
 
-.card-text {
-  font-size: 85%;
+.card h3,
+.card h3 > a {
+  color: white;
+  margin: -63px 15px 30px 9px;
+  font-size: 2.3rem;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+}
+
+h3.dark-text > a {
+  color: rgb(0, 0, 0);
 }
 
 footer {
