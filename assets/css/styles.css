@@ -87,11 +87,13 @@ a.link-white {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8ba', endColorstr='#002c30', GradientType=1 );
 }
 
+.card-wrapper {
+  padding-bottom: 30px;
+}
+
 .card {
   float: left;
-  width: calc(50% - 40px);
   padding: .75rem;
-  margin: 20px;
   border: 0;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.45);
@@ -143,4 +145,11 @@ footer p {
 
 .navbar-inverse .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .card h3,
+  .card h3 > a {
+    font-size: 2.1rem;
+  }
 }
