@@ -118,6 +118,13 @@ a.link-white {
   color: rgb(0, 0, 0);
 }
 
+img.iib-badge {
+  position: absolute;
+  top: 5%;
+  height: 25%;
+  width: auto;
+}
+
 h3.dark-text > a {
   color: rgb(0, 0, 0);
 }
